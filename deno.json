@@ -1,0 +1,14 @@
+{
+    "importMap": "import_map.json",
+    "tasks": {
+        "init": "deno run --allow-read --allow-write src/main.ts init --path data.bkv",
+        "set": "deno run --allow-read --allow-write src/main.ts set user:1 '{ \"name\" : \"Alice\"}' --path data.bkv",
+        "get": "deno run --allow-read --allow-write src/main.ts get user:1 --path data.bkv",
+        "list": "deno run --allow-read --allow-write src/main.ts list --path data.bkv",
+        "delete": "deno run --allow-read --allow-write src/main.ts delete user:1 --path data.bkv",
+        "help": "deno run --allow-read --allow-write src/main.ts --help",
+        "version": "deno run --allow-read --allow-write src/main.ts --version",
+        
+        "start": "deno task version && deno task help && deno task init && deno task set && deno task get && deno task list && deno task delete && deno task list"
+    }
+}

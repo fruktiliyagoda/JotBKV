@@ -1,0 +1,25 @@
+# Deno
+.deno/
+deno.lock
+
+# Logs
+*.log
+
+# System
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.exe
+*.out
+*.bin
+
+# Tese coverage
+coverage/
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+extensions/*
