@@ -17,7 +17,7 @@ It is designed to be simple, minimal and easy to embed into projects that need p
 
 ## Installing
 
-1. Go to [Releases]() section on GitHub.
+1. Go to [Releases](https://github.com/fruktiliyagoda/JotBKV/releases) section on GitHub.
 2. Download a binary for your system (ubuntu, windows, mac-os).
 3. Make it avaible in PATH. For example:
 - **Linux/MacOS:**
@@ -49,4 +49,4 @@ bkv list --path <file>                  #get all keys
 
 ## License
 
-MIT License - see a [LICENSE]() for details
+MIT License - see a [LICENSE](LICENSE) for details
