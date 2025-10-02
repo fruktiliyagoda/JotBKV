@@ -23,8 +23,9 @@ jobs:
       - name: Build binary
         run: deno compile --allow-read --allow-write --allow-env --output bkv src/main.ts
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v1
         with:
-          name: bkv-${{ matrix.os }}
-          path: bkv
+          files: bkv*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
