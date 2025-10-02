@@ -5,6 +5,9 @@ on:
     tags:
       - "v*.*.*"
 
+premissions:
+  contents: write
+
 jobs:
   build:
     strategy:
